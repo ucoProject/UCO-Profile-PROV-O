@@ -20,17 +20,14 @@ PYTHON3 ?= python3
 
 all: \
   .venv-pre-commit/var/.pre-commit-built.log \
-  all-ontology \
-  all-shapes
+  all-ontology
 
 .PHONY: \
   all-dependencies \
   all-ontology \
-  all-shapes \
   check-dependencies \
   check-mypy \
   check-ontology \
-  check-shapes \
   check-supply-chain \
   check-supply-chain-cdo-profile \
   check-supply-chain-pre-commit \
@@ -104,17 +101,11 @@ all-ontology: \
 	$(MAKE) \
 	  --directory ontology
 
-all-shapes: \
-  all-dependencies
-	$(MAKE) \
-	  --directory shapes
-
 check: \
   .venv-pre-commit/var/.pre-commit-built.log \
   check-mypy \
   check-dependencies \
-  check-ontology \
-  check-shapes
+  check-ontology
 	$(MAKE) \
 	  --directory tests \
 	  check
@@ -138,12 +129,6 @@ check-ontology: \
   all-ontology
 	$(MAKE) \
 	  --directory ontology \
-	  check
-
-check-shapes: \
-  all-shapes
-	$(MAKE) \
-	  --directory shapes \
 	  check
 
 # This target's dependencies potentially modify the working directory's
@@ -214,9 +199,6 @@ check-supply-chain-submodules: \
 clean:
 	@$(MAKE) \
 	  --directory tests \
-	  clean
-	@$(MAKE) \
-	  --directory shapes \
 	  clean
 	@$(MAKE) \
 	  --directory ontology \

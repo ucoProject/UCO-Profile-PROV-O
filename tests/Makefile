@@ -24,7 +24,9 @@ test_pys := $(wildcard test_*.py)
 
 profile_ttls := $(wildcard $(top_srcdir)/ontology/uco-*.ttl)
 
-shape_ttls := $(wildcard $(top_srcdir)/shapes/sh-*.ttl)
+shape_ttls := \
+  $(wildcard $(top_srcdir)/dependencies/CDO-Shapes-PROV-O/shapes/sh-*.ttl) \
+  $(wildcard $(top_srcdir)/shapes/sh-*.ttl)
 
 all: \
   monolithic.ttl
@@ -98,12 +100,12 @@ monolithic.ttl: \
 	source $(top_srcdir)/venv/bin/activate \
 	  && rdfpipe \
 	    --output-format turtle \
-	    $(top_srcdir)/dependencies/imports-transitive.ttl \
 	    $(profile_ttls) \
 	    $(shape_ttls) \
+	    $(top_srcdir)/dependencies/imports-transitive.ttl \
+	    $(uco_srcdir)/tests/uco_monolithic.ttl \
 	    $(uco_srcdir)/dependencies/collections-ontology/collections.owl \
 	    $(uco_srcdir)/dependencies/error/docs/current/error.ttl \
-	    $(uco_srcdir)/tests/uco_monolithic.ttl \
 	    > _$@
 	source $(top_srcdir)/venv/bin/activate \
 	  && pyshacl \

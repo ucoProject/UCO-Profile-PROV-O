@@ -1,20 +1,46 @@
-# imports: http://example.org/ontology/uco-example
+# imports: http://example.org/ontology/uco-prov-o
 
 @prefix drafting: <http://example.org/ontology/drafting/> .
 @prefix kb: <http://example.org/kb/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix uco-action: <https://ontology.unifiedcyberontology.org/uco/action/> .
 @prefix uco-core: <https://ontology.unifiedcyberontology.org/uco/core/> .
+@prefix uco-identity: <https://ontology.unifiedcyberontology.org/uco/identity/> .
+@prefix uco-location: <https://ontology.unifiedcyberontology.org/uco/location/> .
+@prefix uco-role: <https://ontology.unifiedcyberontology.org/uco/role/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.org/kb>
 	a owl:Ontology ;
 	rdfs:comment "This knowledge base instantiates each of the mapped classes and properties, so SHACL shapes can perform a review for inconsistencies in the mapping between UCO and the mapped ontology."@en ;
-	owl:imports <http://example.org/ontology/uco-example> ;
+	owl:imports <http://example.org/ontology/uco-prov-o> ;
 	.
 
-kb:UcoObject-24cf6699-3cb6-47fa-9f62-c972b0971752
-	a uco-core:UcoObject ;
+kb:InstantaneousEvent-d83abcf4-701c-4d89-8906-df146051d776
+	a drafting:InstantaneousEvent ;
+	.
+
+kb:Location-596c57b5-6f06-4447-a0df-5194e39c79ab
+	a uco-location:Location ;
+	.
+
+kb:Organization-c101ff2b-b986-4b09-aed5-1ef7b275be4c
+	a uco-identity:Organization ;
+	.
+
+kb:Person-be0422fd-e372-4ef8-bf45-c618b3ba5458
+	a uco-identity:Person ;
+	.
+
+kb:Role-beab4342-e5a2-4d88-a590-3813af8860d3
+	a uco-role:Role ;
+	.
+
+kb:Usage-f0966f66-2f79-4791-9bee-835bfa6efce8
+	a prov:Usage ;
+	prov:hadRole kb:Role-beab4342-e5a2-4d88-a590-3813af8860d3 ;
 	.
 

@@ -1,2 +1,5 @@
-http://example.org/ontology/example/0.0.1	${top_srcdir}/dependencies/example.ttl
-http://example.org/shapes/example	${top_srcdir}/shapes/sh-example.ttl
+http://example.org/ontology/uco-prov-o	${top_srcdir}/ontology/uco-prov-o.ttl
+http://example.org/shapes/sh-prov-o	${top_srcdir}/dependencies/CDO-Shapes-PROV-O/shapes/sh-prov-o.ttl
+http://www.w3.org/ns/prov#	${top_srcdir}/dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl
+http://www.w3.org/ns/prov-o#	${top_srcdir}/dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl
+https://raw.githubusercontent.com/Cyber-Domain-Ontology/CDO-Shapes-PROV-O/main/dependencies/prov-o-dl.ttl	${top_srcdir}/dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl
