@@ -24,9 +24,22 @@
 drafting:InstantaneousEvent
 	a owl:Class ;
 	rdfs:subClassOf
+		drafting:InstantaneousPerdurant ,
 		prov:InstantaneousEvent ,
 		uco-core:Event
 		;
+	.
+
+drafting:InstantaneousPerdurant
+	a owl:Class ;
+	rdfs:subClassOf drafting:Perdurant ;
+	rdfs:isDefinedBy <https://github.com/ucoProject/UCO/issues/651> ;
+	.
+
+drafting:Perdurant
+	a owl:Class ;
+	rdfs:subClassOf uco-core:UcoObject ;
+	rdfs:isDefinedBy <https://github.com/ucoProject/UCO/issues/544> ;
 	.
 
 uco-identity:Organization
