@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
-    <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl" name="http://www.w3.org/ns/prov#"/>
-    <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl" name="http://www.w3.org/ns/prov-o#"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl" name="https://raw.githubusercontent.com/Cyber-Domain-Ontology/CDO-Shapes-PROV-O/main/dependencies/prov-o-dl.ttl"/>
+    <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/shapes/sh-prov-o.ttl" name="http://example.org/shapes/sh-prov-o"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/dependencies/collections-ontology/collections.owl" name="http://purl.org/co"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/dependencies/error/docs/current/error.ttl" name="http://purl.org/spar/error"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/co/co.ttl" name="https://ontology.unifiedcyberontology.org/co"/>
@@ -24,7 +23,6 @@
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/marking/marking.ttl" name="https://ontology.unifiedcyberontology.org/uco/marking"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/marking/marking.ttl" name="https://ontology.unifiedcyberontology.org/uco/marking/1.4.0"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/master/uco.ttl" name="https://ontology.unifiedcyberontology.org/uco/uco"/>
-    <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/master/uco.ttl" name="https://ontology.unifiedcyberontology.org/uco/uco/1.4.0"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/observable/observable.ttl" name="https://ontology.unifiedcyberontology.org/uco/observable"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/observable/observable.ttl" name="https://ontology.unifiedcyberontology.org/uco/observable/1.4.0"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/pattern/pattern.ttl" name="https://ontology.unifiedcyberontology.org/uco/pattern"/>
@@ -41,5 +39,4 @@
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/victim/victim.ttl" name="https://ontology.unifiedcyberontology.org/uco/victim/1.4.0"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/vocabulary/vocabulary.ttl" name="https://ontology.unifiedcyberontology.org/uco/vocabulary"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/uco/vocabulary/vocabulary.ttl" name="https://ontology.unifiedcyberontology.org/uco/vocabulary/1.4.0"/>
-    <uri id="User Entered Import Resolution" uri="uco-prov-o.ttl" name="http://example.org/ontology/uco-prov-o"/>
 </catalog>
