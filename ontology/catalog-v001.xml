@@ -3,6 +3,7 @@
     <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl" name="http://www.w3.org/ns/prov#"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl" name="http://www.w3.org/ns/prov-o#"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl" name="https://raw.githubusercontent.com/Cyber-Domain-Ontology/CDO-Shapes-PROV-O/main/dependencies/prov-o-dl.ttl"/>
+    <uri id="User Entered Import Resolution" uri="../dependencies/CDO-Shapes-PROV-O/ontology/cdo-prov-o.ttl" name="http://example.org/ontology/cdo-prov-o"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/dependencies/collections-ontology/collections.owl" name="http://purl.org/co"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/dependencies/error/docs/current/error.ttl" name="http://purl.org/spar/error"/>
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/co/co.ttl" name="https://ontology.unifiedcyberontology.org/co"/>
