@@ -22,8 +22,8 @@ uco_srcdir := $(top_srcdir)/dependencies/UCO
 
 generated_dependencies_ttls := \
   $(top_srcdir)/dependencies/CDO-Shapes-PROV-O/dependencies/prov-o-dl.ttl \
-  $(uco_srcdir)/tests/uco_monolithic.ttl \
-  cdo-prov-o.ttl
+  $(top_srcdir)/dependencies/CDO-Shapes-PROV-O/ontology/cdo-prov-o.ttl \
+  $(uco_srcdir)/tests/uco_monolithic.ttl
 
 test_pys := $(wildcard test_*.py)
 
