@@ -25,7 +25,7 @@ all: \
 
 .PHONY: \
   check-supply-chain \
-  check-supply-chain-CDO-Shapes-Example
+  check-supply-chain-CDO-Shapes-PROV-O
 
 $(uco_srcdir)/.venv.done.log:
 	$(MAKE) \
@@ -48,14 +48,14 @@ check: \
 # supply chain rule.  This recursive check is expected to be called most
 # typically by the top_srcdir recipe check-supply-chain-dependencies.
 check-supply-chain: \
-  check-supply-chain-CDO-Shapes-Example
+  check-supply-chain-CDO-Shapes-PROV-O
 
-check-supply-chain-CDO-Shapes-Example:
+check-supply-chain-CDO-Shapes-PROV-O:
 	$(MAKE) \
-	  --directory CDO-Shapes-Example \
+	  --directory CDO-Shapes-PROV-O \
 	  check-supply-chain-dependencies
 	$(MAKE) \
-	  --directory CDO-Shapes-Example \
+	  --directory CDO-Shapes-PROV-O \
 	  check-supply-chain
 
 clean:
