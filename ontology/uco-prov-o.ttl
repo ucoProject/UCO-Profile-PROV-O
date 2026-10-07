@@ -1,5 +1,5 @@
+# imports: http://example.org/ontology/cdo-prov-o
 # imports: https://ontology.unifiedcyberontology.org/uco/uco/1.5.0
-# imports: https://raw.githubusercontent.com/Cyber-Domain-Ontology/CDO-Shapes-PROV-O/main/dependencies/prov-o-dl.ttl
 
 @prefix drafting: <http://example.org/ontology/drafting/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -16,8 +16,8 @@
 <http://example.org/ontology/uco-prov-o>
 	a owl:Ontology ;
 	owl:imports
-		<https://ontology.unifiedcyberontology.org/uco/uco/1.5.0> ,
-		<https://raw.githubusercontent.com/Cyber-Domain-Ontology/CDO-Shapes-PROV-O/main/dependencies/prov-o-dl.ttl>
+		<http://example.org/ontology/cdo-prov-o> ,
+		<https://ontology.unifiedcyberontology.org/uco/uco/1.5.0>
 		;
 	.
 
